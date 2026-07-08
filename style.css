@@ -1,40 +1,46 @@
 /* --- Default / Light Theme Colors --- */
 :root {
-    --nav-bg: #e5e9e1;
-    --text-main: #333333;
-    --text-muted: #666666;
-    --bg-light: #f4f6f9;
-    --white: #ffffff;
-    --card-border: #eaeaea;
+    /* 🏗️ STRUCTURAL COLORS (No pure whites or blacks) */
+    --nav-bg: #f8f9fa;       /* Alabaster (Soft off-white) */
+    --text-main: #2b3035;    /* Deep Charcoal (Easy-reading text) */
+    --text-muted: #6c757d;   /* Slate Gray (Secondary text) */
+    --bg-light: #f1f3f5;     /* Frosted Gray (Main background) */
+    --white: #fdfdfe;        /* Pearl (Content cards) */
+    --card-border: #dee2e6;  /* Light Silver (Card outlines) */
 
-    /* 🎨 INDEPENDENT COLOR CONTROLS (LIGHT MODE) */
-    --logo-text: #333333;    /* "RightButton" color */
-    --logo-accent: #0056b3;  /* "Labs" color */
-    --nav-links: #333333;    /* Inactive menu links (About, Services, etc) */
-    --nav-active: #0056b3;   /* Active page link ("Home" color) */
-    --hero-heading: #0056b3; /* "Welcome to RightButton Labs" text color */
-    --cta-bg: #0056b3;       /* Call-to-action button color */
-    --card-headings: #0056b3;/* Subheadings inside service blocks */
+    /* 🎨 LOGO COLORS (Completely untouched) */
+    --logo-text: #333333;    
+    --logo-accent: #059669;  
+
+    /* 🎨 BRAND & LINK COLORS */
+    --nav-links: #495057;    /* Iron Gray (Inactive links) */
+    --nav-active: #0056b3;   /* Trust Blue (Active links) */
+    --hero-heading: #0056b3; /* Trust Blue (Big welcome text) */
+    --cta-bg: #0056b3;       /* Trust Blue (Buttons) */
+    --card-headings: #0056b3;/* Trust Blue (Card subheadings) */
 }
 
 /* --- Dark Theme Colors (Auto-Triggers on user's device) --- */
 @media (prefers-color-scheme: dark) {
     :root {
-        --nav-bg: #242043;
-        --text-main: #e0e0e0;
-        --text-muted: #a0a0a0;
-        --bg-light: #121212;
-        --white: #1e1e1e;
-        --card-border: #333333;
+        /* 🏗️ STRUCTURAL COLORS (No pure whites or blacks) */
+        --nav-bg: #1a1d20;       /* Deep Carbon (Navigation bar) */
+        --text-main: #e9ecef;    /* Soft Ash (Main text) */
+        --text-muted: #adb5bd;   /* Muted Silver (Secondary text) */
+        --bg-light: #121416;     /* Midnight Shadow (Main background) */
+        --white: #212529;        /* Dark Slate (Content cards) */
+        --card-border: #343a40;  /* Gunmetal (Card outlines) */
 
-        /* 🎨 INDEPENDENT COLOR CONTROLS (DARK MODE) */
+        /* 🎨 LOGO COLORS (Completely untouched) */
         --logo-text: #ffffff;    
-        --logo-accent: #4da3ff;  
-        --nav-links: #ffffff;    
-        --nav-active: #4da3ff;   
-        --hero-heading: #4da3ff; 
-        --cta-bg: #4da3ff;       
-        --card-headings: #4da3ff;
+        --logo-accent: #34d399;  
+
+        /* 🎨 BRAND & LINK COLORS */
+        --nav-links: #ced4da;    /* Light Silver (Inactive links) */
+        --nav-active: #4da3ff;   /* Electric Blue (Active links) */
+        --hero-heading: #4da3ff; /* Electric Blue (Big welcome text) */
+        --cta-bg: #4da3ff;       /* Electric Blue (Buttons) */
+        --card-headings: #4da3ff;/* Electric Blue (Card subheadings) */
     }
 }
 

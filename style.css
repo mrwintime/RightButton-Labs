@@ -201,15 +201,15 @@ h2 {
 /* --- Contact Info --- */
 .contact-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centers the group perfectly */
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;              /* Forces a perfect, permanent 4-column gap between items */
     text-align: center;
+    margin-top: 2rem;
 }
 
-.contact-item a {
-    color: var(--brand-accent);
-    text-decoration: none;
+.contact-item {
+    min-width: 200px;       /* Gives every block a balanced starting width */
 }
 
 /* --- Footer --- */

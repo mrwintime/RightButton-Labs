@@ -1,23 +1,23 @@
-/* --- Default / Light Theme Colors --- */
+/* --- Default / Light Theme Colors (Dimmed & Muted) --- */
 :root {
-    /* 🏗️ STRUCTURAL COLORS (No pure whites or blacks) */
-    --nav-bg: #f8f9fa;       /* Alabaster (Soft off-white) */
-    --text-main: #2b3035;    /* Deep Charcoal (Easy-reading text) */
-    --text-muted: #6c757d;   /* Slate Gray (Secondary text) */
-    --bg-light: #f1f3f5;     /* Frosted Gray (Main background) */
-    --white: #fdfdfe;        /* Pearl (Content cards) */
-    --card-border: #dee2e6;  /* Light Silver (Card outlines) */
+    /* 🏗️ STRUCTURAL COLORS (Dimmed down to reduce glare) */
+    --nav-bg: #e9ecef;       /* Soft Gray (Much darker than white for the nav) */
+    --bg-light: #dee2e6;     /* Deep Cool Gray (Noticeably darker main background) */
+    --white: #f1f3f5;        /* Dimmed Card White (Very soft, no glare) */
+    --text-main: #212529;    /* Very Dark Charcoal (Keeps text highly readable) */
+    --text-muted: #495057;   /* Medium Gray (Secondary text) */
+    --card-border: #ced4da;  /* Soft Silver outline */
 
-    /* 🎨 LOGO COLORS (Completely untouched) */
+    /* 🎨 LOGO COLORS (Untouched) */
     --logo-text: #333333;    
-    --logo-accent: #059669;  
+    --logo-accent: #0056b3;  
 
     /* 🎨 BRAND & LINK COLORS */
-    --nav-links: #495057;    /* Iron Gray (Inactive links) */
-    --nav-active: #0056b3;   /* Trust Blue (Active links) */
-    --hero-heading: #0056b3; /* Trust Blue (Big welcome text) */
-    --cta-bg: #0056b3;       /* Trust Blue (Buttons) */
-    --card-headings: #0056b3;/* Trust Blue (Card subheadings) */
+    --nav-links: #495057;    
+    --nav-active: #0056b3;   
+    --hero-heading: #0056b3; 
+    --cta-bg: #0056b3;       
+    --card-headings: #0056b3;
 }
 
 /* --- Dark Theme Colors (Auto-Triggers on user's device) --- */
@@ -239,14 +239,12 @@ h2 {
 
 /* --- Footer --- */
 footer {
-    background-color: #c5c5c5; /* Replaced the variable with a permanent dark charcoal */
-    color: #000000;            /* Replaced the variable with permanent white text */
+    background-color: #111111; /* Permanent nearly-black/dark charcoal */
+    color: #e9ecef;            /* Permanent soft light text */
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease;
 }
-
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .navbar {

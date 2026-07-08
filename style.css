@@ -233,8 +233,8 @@ h2 {
 
 /* --- Footer --- */
 footer {
-    background-color: var(--logo-text);
-    color: var(--nav-bg); 
+    background-color: #1a1a1a; /* Replaced the variable with a permanent dark charcoal */
+    color: #000000;            /* Replaced the variable with permanent white text */
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;

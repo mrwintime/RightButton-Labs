@@ -1,26 +1,40 @@
 /* --- Default / Light Theme Colors --- */
 :root {
     --nav-bg: #ffffff;
-    --brand-text: #333333;
-    --brand-accent: #0056b3; /* Primary Blue */
     --text-main: #333333;
     --text-muted: #666666;
     --bg-light: #f4f6f9;
     --white: #ffffff;
     --card-border: #eaeaea;
+
+    /* 🎨 INDEPENDENT COLOR CONTROLS (LIGHT MODE) */
+    --logo-text: #333333;    /* "RightButton" color */
+    --logo-accent: #0056b3;  /* "Labs" color */
+    --nav-links: #333333;    /* Inactive menu links (About, Services, etc) */
+    --nav-active: #0056b3;   /* Active page link ("Home" color) */
+    --hero-heading: #0056b3; /* "Welcome to RightButton Labs" text color */
+    --cta-bg: #0056b3;       /* Call-to-action button color */
+    --card-headings: #0056b3;/* Subheadings inside service blocks */
 }
 
 /* --- Dark Theme Colors (Auto-Triggers on user's device) --- */
 @media (prefers-color-scheme: dark) {
     :root {
         --nav-bg: #1a1a1a;
-        --brand-text: #ffffff;
-        --brand-accent: #71ff4d; /* Lighter blue for dark mode */
         --text-main: #e0e0e0;
         --text-muted: #a0a0a0;
         --bg-light: #121212;
         --white: #1e1e1e;
         --card-border: #333333;
+
+        /* 🎨 INDEPENDENT COLOR CONTROLS (DARK MODE) */
+        --logo-text: #ffffff;    
+        --logo-accent: #4da3ff;  
+        --nav-links: #ffffff;    
+        --nav-active: #4da3ff;   
+        --hero-heading: #4da3ff; 
+        --cta-bg: #4da3ff;       
+        --card-headings: #4da3ff;
     }
 }
 
@@ -42,7 +56,7 @@ body {
 }
 
 main {
-    flex: 1; /* Pushes the footer down on empty pages */
+    flex: 1;
 }
 
 /* --- Navigation Bar --- */
@@ -75,13 +89,13 @@ main {
 .brand-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--brand-text);
+    color: var(--logo-text); /* Linked to logo text variable */
     letter-spacing: -0.5px;
     transition: color 0.3s ease;
 }
 
 .brand-accent {
-    color: var(--brand-accent);
+    color: var(--logo-accent); /* Linked to logo accent variable */
     transition: color 0.3s ease;
 }
 
@@ -94,14 +108,14 @@ main {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--brand-text);
+    color: var(--nav-links); /* Linked to base link variable */
     font-weight: 600;
     font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: var(--brand-accent);
+    color: var(--nav-active); /* Linked to active link variable */
 }
 
 /* --- Layout Utility Classes --- */
@@ -127,7 +141,7 @@ main {
 }
 
 h2 {
-    color: var(--brand-text);
+    color: var(--logo-text);
 }
 
 /* --- Hero Section (Home Only) --- */
@@ -143,7 +157,7 @@ h2 {
 
 .hero h1 {
     font-size: 4rem;
-    color: var(--brand-accent);
+    color: var(--hero-heading); /* Linked to hero heading variable */
     margin-bottom: 1rem;
 }
 
@@ -159,8 +173,8 @@ h2 {
 .cta-button {
     display: inline-block;
     padding: 1rem 2.5rem;
-    background-color: var(--brand-accent);
-    color: #ffffff; /* Keep button text white in both modes */
+    background-color: var(--cta-bg); /* Linked to button background variable */
+    color: #ffffff; 
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
@@ -195,27 +209,32 @@ h2 {
 
 .service-card h3 {
     margin-bottom: 1rem;
-    color: var(--brand-accent);
+    color: var(--card-headings); /* Linked to card headings variable */
 }
 
 /* --- Contact Info --- */
 .contact-info {
     display: flex;
-    justify-content: center; /* Centers the group perfectly */
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 4rem;              /* Forces a perfect, permanent 4-column gap between items */
+    gap: 4rem;
     text-align: center;
     margin-top: 2rem;
 }
 
 .contact-item {
-    min-width: 200px;       /* Gives every block a balanced starting width */
+    min-width: 200px;
+}
+
+.contact-item a {
+    color: var(--card-headings);
+    text-decoration: none;
 }
 
 /* --- Footer --- */
 footer {
-    background-color: var(--brand-text);
-    color: var(--nav-bg); /* Inverts color for high contrast */
+    background-color: var(--logo-text);
+    color: var(--nav-bg); 
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;

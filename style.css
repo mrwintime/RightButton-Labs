@@ -1,6 +1,6 @@
 /* --- Default / Light Theme Colors --- */
 :root {
-    --nav-bg: #ffffff;
+    --nav-bg: #e5e9e1;
     --text-main: #333333;
     --text-muted: #666666;
     --bg-light: #f4f6f9;
@@ -20,7 +20,7 @@
 /* --- Dark Theme Colors (Auto-Triggers on user's device) --- */
 @media (prefers-color-scheme: dark) {
     :root {
-        --nav-bg: #1a1a1a;
+        --nav-bg: #242043;
         --text-main: #e0e0e0;
         --text-muted: #a0a0a0;
         --bg-light: #121212;
@@ -233,7 +233,7 @@ h2 {
 
 /* --- Footer --- */
 footer {
-    background-color: #1a1a1a; /* Replaced the variable with a permanent dark charcoal */
+    background-color: #c5c5c5; /* Replaced the variable with a permanent dark charcoal */
     color: #000000;            /* Replaced the variable with permanent white text */
     text-align: center;
     padding: 2rem;

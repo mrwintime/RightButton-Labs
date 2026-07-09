@@ -13,7 +13,7 @@
 
     /* Logo & Accent Colors */
     --logo-text: #333333;    
-    --logo-accent: #0056b3;  /* ⚠️ SWAP THIS WITH YOUR CUSTOM HEX CODE */
+    --logo-accent: #0056b3;  
 
     /* Brand & Link Colors */
     --nav-links: #495057;    
@@ -35,7 +35,7 @@
 
         /* Logo & Accent Colors */
         --logo-text: #ffffff;    
-        --logo-accent: #4da3ff;  /* ⚠️ SWAP THIS WITH YOUR DARK MODE HEX CODE */
+        --logo-accent: #4da3ff;  
 
         /* Brand & Link Colors */
         --nav-links: #ced4da;    
@@ -73,15 +73,32 @@ body {
     border-bottom: 1px solid var(--card-border);
 }
 
+/* Logo and Link Fixes */
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none !important;
+}
+
+.brand-link:hover, 
+.brand-text {
+    text-decoration: none !important;
+}
+
 .brand-text {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--logo-text);
-    text-decoration: none; /* Keeps the link clean */
 }
 
 .brand-accent {
     color: var(--logo-accent);
+}
+
+.logo-icon {
+    height: 40px; 
+    width: auto;
 }
 
 nav .nav-links {
@@ -118,6 +135,10 @@ nav .nav-links a.active {
     border-radius: 8px;
     padding: 3rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* Layout fail-safe for long emails/links */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .page-card h2 {
@@ -126,7 +147,28 @@ nav .nav-links a.active {
     margin-bottom: 0.5rem;
 }
 
-/* --- 6. PERMANENT FOOTER --- */
+/* --- 6. BUTTON STYLES --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--cta-bg);
+    color: #ffffff !important;
+    padding: 10px 24px;
+    text-decoration: none !important;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+    
+    /* Keeps buttons cleanly sized on mobile */
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+}
+
+.cta-button:hover {
+    opacity: 0.85;
+}
+
+/* --- 7. PERMANENT FOOTER --- */
 footer {
     background-color: #111111; 
     color: #e9ecef;            
@@ -134,20 +176,4 @@ footer {
     padding: 2rem;
     font-size: 0.9rem;
     margin-top: auto;
-}
-
-/* --- 7. BUTTON STYLES --- */
-.cta-button {
-    display: inline-block;
-    background-color: var(--cta-bg);
-    color: #ffffff !important;
-    padding: 10px 24px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: opacity 0.2s ease;
-}
-
-.cta-button:hover {
-    opacity: 0.85;
 }

@@ -4,15 +4,14 @@
 
 /* --- 1. LIGHT THEME (Dimmed to reduce glare) --- */
 :root {
-    /* Structural Colors */
-    --nav-bg: #e9ecef;       /* Soft Gray */
-    --bg-light: #dee2e6;     /* Deep Cool Gray */
-    --white: #f1f3f5;        /* Dimmed Card White */
-    --text-main: #212529;    /* Very Dark Charcoal */
-    --text-muted: #495057;   /* Medium Gray */
-    --card-border: #ced4da;  /* Soft Silver */
+    --nav-bg: #e9ecef;       
+    --bg-light: #dee2e6;     
+    --white: #f1f3f5;        
+    --text-main: #212529;    
+    --text-muted: #495057;   
+    --card-border: #ced4da;  
 
-    /* Logo Colors */
+    /* Logo & Accent Colors */
     --logo-text: #333333;    
     --logo-accent: #0056b3;  /* ⚠️ SWAP THIS WITH YOUR CUSTOM HEX CODE */
 
@@ -27,15 +26,14 @@
 /* --- 2. DARK THEME (Auto-triggers on user's device) --- */
 @media (prefers-color-scheme: dark) {
     :root {
-        /* Structural Colors */
-        --nav-bg: #1a1d20;       /* Deep Carbon */
-        --bg-light: #121416;     /* Midnight Shadow */
-        --white: #212529;        /* Dark Slate */
-        --text-main: #e9ecef;    /* Soft Ash */
-        --text-muted: #adb5bd;   /* Muted Silver */
-        --card-border: #343a40;  /* Gunmetal */
+        --nav-bg: #1a1d20;       
+        --bg-light: #121416;     
+        --white: #212529;        
+        --text-main: #e9ecef;    
+        --text-muted: #adb5bd;   
+        --card-border: #343a40;  
 
-        /* Logo Colors */
+        /* Logo & Accent Colors */
         --logo-text: #ffffff;    
         --logo-accent: #4da3ff;  /* ⚠️ SWAP THIS WITH YOUR DARK MODE HEX CODE */
 
@@ -62,7 +60,7 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the footer stays at the bottom */
+    min-height: 100vh;
 }
 
 /* --- 4. HEADER & NAVIGATION --- */
@@ -79,6 +77,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--logo-text);
+    text-decoration: none; /* Keeps the link clean */
 }
 
 .brand-accent {
@@ -106,9 +105,9 @@ nav .nav-links a.active {
 
 /* --- 5. MAIN CONTENT & CARDS --- */
 .page-content {
-    flex: 1; /* Pushes the footer down naturally */
+    flex: 1;
     width: 100%;
-    max-width: 900px; /* Centers the content on large screens */
+    max-width: 900px;
     margin: 3rem auto;
     padding: 0 20px;
 }
@@ -129,10 +128,26 @@ nav .nav-links a.active {
 
 /* --- 6. PERMANENT FOOTER --- */
 footer {
-    background-color: #111111; /* Permanent dark charcoal */
-    color: #e9ecef;            /* Permanent light text */
+    background-color: #111111; 
+    color: #e9ecef;            
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
     margin-top: auto;
+}
+
+/* --- 7. BUTTON STYLES --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--cta-bg);
+    color: #ffffff !important;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+}
+
+.cta-button:hover {
+    opacity: 0.85;
 }

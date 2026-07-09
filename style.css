@@ -2,47 +2,47 @@
    RIGHTBUTTON LABS - MASTER STYLESHEET
    ========================================= */
 
-/* --- 1. LIGHT THEME (Dimmed to reduce glare) --- */
+/* --- 1. LIGHT THEME (Soft matte, eye-friendly) --- */
 :root {
-    --nav-bg: #e9ecef;       
-    --bg-light: #dee2e6;     
-    --white: #f1f3f5;        
-    --text-main: #212529;    
-    --text-muted: #495057;   
-    --card-border: #ced4da;  
+    --nav-bg: #e3e6e9;       
+    --bg-light: #eceef1;     
+    --white: #f5f7f9;        
+    --text-main: #2b3035;    
+    --text-muted: #596169;   
+    --card-border: #d2d6da;  
 
     /* Logo & Accent Colors */
-    --logo-text: #333333;    
-    --logo-accent: #0056b3;  
+    --logo-text: #2b3035;    
+    --logo-accent: #1d5b79;  /* Engineering Blue */
 
     /* Brand & Link Colors */
-    --nav-links: #495057;    
-    --nav-active: #0056b3;   
-    --hero-heading: #0056b3; 
-    --cta-bg: #0056b3;       
-    --card-headings: #0056b3;
+    --nav-links: #596169;    
+    --nav-active: #1d5b79;   
+    --hero-heading: #1d5b79; 
+    --cta-bg: #1d5b79;       
+    --card-headings: #1d5b79;
 }
 
-/* --- 2. DARK THEME (Auto-triggers on user's device) --- */
+/* --- 2. DARK THEME (Professional Slate, not pure black) --- */
 @media (prefers-color-scheme: dark) {
     :root {
-        --nav-bg: #1a1d20;       
-        --bg-light: #121416;     
-        --white: #212529;        
-        --text-main: #e9ecef;    
-        --text-muted: #adb5bd;   
-        --card-border: #343a40;  
+        --nav-bg: #1c2128;       
+        --bg-light: #22272e;     
+        --white: #2d333b;        
+        --text-main: #cdd9e5;    
+        --text-muted: #768390;   
+        --card-border: #444c56;  
 
         /* Logo & Accent Colors */
-        --logo-text: #ffffff;    
-        --logo-accent: #4da3ff;  
+        --logo-text: #cdd9e5;    
+        --logo-accent: #5dade2;  /* Vibrant readable cyan */
 
         /* Brand & Link Colors */
-        --nav-links: #ced4da;    
-        --nav-active: #4da3ff;   
-        --hero-heading: #4da3ff; 
-        --cta-bg: #4da3ff;       
-        --card-headings: #4da3ff;
+        --nav-links: #768390;    
+        --nav-active: #5dade2;   
+        --hero-heading: #5dade2; 
+        --cta-bg: #5dade2;       
+        --card-headings: #5dade2;
     }
 }
 

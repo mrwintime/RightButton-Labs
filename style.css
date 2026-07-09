@@ -18,9 +18,9 @@
     /* Brand & Link Colors */
     --nav-links: #596169;    
     --nav-active: #1d5b79;   
-    --hero-heading: #1d5b79; 
-    --cta-bg: #1d5b79;       
-    --card-headings: #1d5b79;
+    --hero-heading: #0f766e; 
+    --cta-bg: #0f766e;       
+    --card-headings: #0f766e;
 }
 
 /* --- 2. DARK THEME (Professional Slate, not pure black) --- */
@@ -40,9 +40,9 @@
         /* Brand & Link Colors */
         --nav-links: #768390;    
         --nav-active: #5dade2;   
-        --hero-heading: #5dade2; 
-        --cta-bg: #5dade2;       
-        --card-headings: #5dade2;
+        --hero-heading: #2dd4bf; 
+        --cta-bg: #2dd4bf;       
+        --card-headings: #2dd4bf;
     }
 }
 

@@ -177,3 +177,41 @@ footer {
     font-size: 0.9rem;
     margin-top: auto;
 }
+/* --- MOBILE RESPONSIVENESS (Screens narrower than 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Stack the header items */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* 2. Make nav links wrap nicely */
+    nav .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* 3. Reduce padding/margins for small screens */
+    .page-content {
+        margin: 1rem auto;
+        padding: 0 10px;
+    }
+
+    .page-card {
+        padding: 1.5rem;
+    }
+
+    /* 4. Fix headings for mobile */
+    .page-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* 5. Ensure button spans to fill width nicely */
+    .cta-button {
+        width: 100%;
+    }
+}

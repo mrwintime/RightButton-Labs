@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
   <url>
-    <loc>https://rightbuttonlabs.com/</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://rightbuttonlabs.com/home</loc>
+    <lastmod>2026-07-11</lastmod>
   </url>
-
   <url>
-    <loc>https://rightbuttonlabs.com/services.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://rightbuttonlabs.com/about</loc>
+    <lastmod>2026-07-11</lastmod>
   </url>
-
   <url>
-    <loc>https://rightbuttonlabs.com/about.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://rightbuttonlabs.com/innovations</loc>
+    <lastmod>2026-07-11</lastmod>
   </url>
-
   <url>
-    <loc>https://rightbuttonlabs.com/contact.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://rightbuttonlabs.com/solutions</loc>
+    <lastmod>2026-07-11</lastmod>
   </url>
-
+  <url>
+    <loc>https://rightbuttonlabs.com/contact</loc>
+    <lastmod>2026-07-11</lastmod>
+  </url>
 </urlset>
